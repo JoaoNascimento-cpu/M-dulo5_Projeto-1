@@ -1,0 +1,45 @@
+@font-face {
+    font-family: myFont;
+    src: url(/font/Neon.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: myFont;
+    background-color: #4d4a49;
+}
+
+body{
+    background-color: #4d4a49;
+}
+
+header h1{
+    color: #cccaca;
+    font-size: 48px;
+}
+
+header nav{
+    padding-top: 18px;
+    width: 300px;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 28px;
+    color: #cccaca;
+}
+
+
+.inicio{
+    background-color: pink;
+}
