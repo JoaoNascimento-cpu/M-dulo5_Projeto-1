@@ -2,6 +2,10 @@
     font-family: myFont;
     src: url(/font/Neon.ttf);
 }
+@font-face {
+    font-family: daFont;
+    src: url(/font/Montserrat-VariableFont_wght.ttf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -15,20 +19,22 @@ header{
     padding-left: 20px;
     padding-right: 20px;
     font-family: myFont;
-    background-color: #4d4a49;
+    background-color: #ED008C;
+    border-bottom: 15px solid #d4007e;
 }
 
 body{
-    background-color: #4d4a49;
+    background-color: #f0eeee;
 }
 
 header h1{
-    color: #cccaca;
+    color: #ece9e9;
     font-size: 48px;
+    margin-top: 15px;
 }
 
 header nav{
-    padding-top: 18px;
+    padding-top: 20px;
     width: 300px;
 }
 
@@ -36,10 +42,112 @@ header nav li{
     display: inline;
     margin-left: 16px;
     font-size: 28px;
-    color: #cccaca;
+    color: #ece9e9;
 }
 
+header nav ul{
+    height: 100%;
+    padding-top: 13px;
+}
 
-.inicio{
-    background-color: pink;
+header a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 28px;
+}
+
+.em-cartaz{
+    color: #A5A5A5;
+    font-family: da;
+    font-size: 56px;
+    font-weight: 200;
+    margin-left: 250px;
+    margin-right: 200px;
+    margin-top: 40px;
+}
+
+hr{
+    border-top: 3px solid #A5A5A5;
+    width:50%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.catalogo{
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.filme img{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.filme{
+    /* background-color: aqua; */
+    width: 250.36px;
+    height: 500px;
+    box-shadow: 5px 10px 5px  #888888cb;
+}
+
+.filme:hover{
+    transition: transform 1s;
+    transform: translateX(0) scale(1.09);
+}
+.caixa{
+    height: 200px;
+    border-style: solid;
+    border-color: #a5a5a563;
+}
+
+.descricao{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.descricao h3{
+    font-family: daFont;
+    padding-bottom: 12px;
+}
+.descricao p{
+    font-family: daFont;
+    padding-bottom: 12px;
+}
+
+.top-footer{
+    height: 40px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+footer{
+    background: #404035;
+    color: #fff;
+    padding: 16px 0 ;
+    padding-left: 20px;
+    margin-top: 50px;
+}
+
+.rodape{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    justify-content: space-around;
+    font-family: daFont;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.rodape p{
+    font-size: 16px;
+    padding-top: 40px;
 }
